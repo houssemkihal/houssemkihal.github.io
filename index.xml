@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Portfolio Website</title>
+    <link>/</link>
+    <description>Recent content on My Portfolio Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biological Oscillators</title>
+      <link>/biological_oscillators/</link>
+      <pubDate>Mon, 27 Apr 2020 00:56:01 +0200</pubDate>
+      
+      <guid>/biological_oscillators/</guid>
+      <description>Biological networks Complex biological system can be model by biochemical and genetic networks those diagrams draw the interaction between species in the system with themselves and one another. species involved in the interaction in the networks The abundance of each species is assigned to a state variable within the model.
+Examples Block math: $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$
+where $\phi(x,y)=\frac{d f\left(G_{1}\right)}{d t}$ and $\psi(x,y) =\frac{d f\left(G_{2}\right)}{d t}$ the dynamic of the system can be determined from the two eigenvalues $\lambda_{1}$ and $\lambda_{2}$.</description>
+    </item>
+    
+    <item>
+      <title>Last_test</title>
+      <link>/last_test/</link>
+      <pubDate>Tue, 27 Apr 2021 22:11:38 +0200</pubDate>
+      
+      <guid>/last_test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

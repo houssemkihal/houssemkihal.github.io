@@ -514,7 +514,31 @@ section {
   margin-top: 2.4em;
 }
 
+@media all and (max-width: 513px) {
+  .case-details {
+    justify-content: flex-start;
+  }
+  .download-resume {
+    display: block;
+    width: 100%;
+  }
+  .case-details-item {
+    padding-right: 25px !important;
+  }
+}
 
+.case-details-item {
+  padding-right: 20px;
+}
+
+.case-details-item strong {
+  font-weight: bold;
+}
+
+.case-details-item p {
+  line-height: 1.8em;
+  font-size: 16px;
+}
 
 @media all and (max-width:1040px) {
   .case-study-item {

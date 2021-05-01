@@ -12,9 +12,7 @@
       <pubDate>Mon, 27 Apr 2020 00:56:01 +0200</pubDate>
       
       <guid>/biological_oscillators/</guid>
-      <description>Biological networks Complex biological system can be model by biochemical and genetic networks those diagrams draw the interaction between species in the system with themselves and one another. species involved in the interaction in the networks The abundance of each species is assigned to a state variable within the model.
-Examples Block math: $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$
-where $\phi(x,y)=\frac{d f\left(G_{1}\right)}{d t}$ and $\psi(x,y) =\frac{d f\left(G_{2}\right)}{d t}$ the dynamic of the system can be determined from the two eigenvalues $\lambda_{1}$ and $\lambda_{2}$.</description>
+      <description>Biological networks Complex biological system can be model by biochemical and genetic networks those diagrams draw the interaction between species in the system with themselves and one another. species involved in the interaction in the networks The abundance of each species is assigned to a state variable within the model.</description>
     </item>
     
     <item>

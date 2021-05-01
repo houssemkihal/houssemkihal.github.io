@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Portfolio Website</title>
+    <title>Houssem&#39;s Portfolio</title>
     <link>https://houssemkihal.github.io/</link>
-    <description>Recent content on My Portfolio Website</description>
+    <description>Recent content on Houssem&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://houssemkihal.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Biological Oscillators</title>
-      <link>https://houssemkihal.github.io/biological_oscillators/</link>
-      <pubDate>Mon, 27 Apr 2020 00:56:01 +0200</pubDate>
-      
-      <guid>https://houssemkihal.github.io/biological_oscillators/</guid>
-      <description>Biological networks Complex biological system can be model by biochemical and genetic networks those diagrams draw the interaction between species in the system with themselves and one another. species involved in the interaction in the networks The abundance of each species is assigned to a state variable within the model.</description>
-    </item>
-    
     <item>
       <title>360 Pro | Alexis Collado</title>
       <link>https://houssemkihal.github.io/360pro/</link>
@@ -22,6 +13,15 @@
       
       <guid>https://houssemkihal.github.io/360pro/</guid>
       <description>The Challenge Meeting with Chappy Callanta of 360 Pro led us to discover the root problem — the implementation of their performance testing framework. The gym uses a Numbers document on one iPad to record all tests, and relies on inefficient manual procedures to do the work. The document calculates a total pro score based on an athlete&amp;rsquo;s performance for specific exercises, but the coach using it has to refer to several norms before assigning a pro score.</description>
+    </item>
+    
+    <item>
+      <title>Biological Oscillators</title>
+      <link>https://houssemkihal.github.io/biological_oscillators/</link>
+      <pubDate>Mon, 27 Apr 2020 00:56:01 +0200</pubDate>
+      
+      <guid>https://houssemkihal.github.io/biological_oscillators/</guid>
+      <description></description>
     </item>
     
   </channel>

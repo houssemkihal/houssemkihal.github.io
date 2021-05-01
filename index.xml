@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Portfolio Website</title>
-    <link>/</link>
+    <link>https://houssemkihal.github.io/</link>
     <description>Recent content on My Portfolio Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://houssemkihal.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>360 Pro | Alexis Collado</title>
-      <link>/360pro/</link>
+      <link>https://houssemkihal.github.io/360pro/</link>
       <pubDate>Sun, 15 Oct 2017 03:29:08 -0700</pubDate>
       
-      <guid>/360pro/</guid>
+      <guid>https://houssemkihal.github.io/360pro/</guid>
       <description>The Challenge Meeting with Chappy Callanta of 360 Pro led us to discover the root problem — the implementation of their performance testing framework. The gym uses a Numbers document on one iPad to record all tests, and relies on inefficient manual procedures to do the work. The document calculates a total pro score based on an athlete&amp;rsquo;s performance for specific exercises, but the coach using it has to refer to several norms before assigning a pro score.</description>
     </item>
     

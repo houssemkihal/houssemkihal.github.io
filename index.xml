@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://houssemkihal.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>360 Pro | Alexis Collado</title>
+      <link>https://houssemkihal.github.io/360pro/</link>
+      <pubDate>Sun, 15 Oct 2017 03:29:08 -0700</pubDate>
+      
+      <guid>https://houssemkihal.github.io/360pro/</guid>
+      <description>The Challenge   Meeting with Chappy Callanta of 360 Pro led us to discover the root problem — the implementation of their performance testing framework. The gym uses a Numbers document on one iPad to record all tests, and relies on inefficient manual procedures to do the work. The document
+$$ \partial_{t} r=-\frac{1}{\zeta} \partial_{\tilde{r}} \mathcal{V}(r)+\sqrt{2 D_{t}} \xi(t) $$
+Group testing is impossible to do. Chappy says &amp;ldquo;I need to duplicate the Numbers document again and again for each testing session.</description>
+    </item>
+    
+    <item>
       <title>Biological Oscillators</title>
       <link>https://houssemkihal.github.io/biological_oscillators/</link>
       <pubDate>Mon, 27 Apr 2020 00:56:01 +0200</pubDate>
@@ -16,7 +27,7 @@
     </item>
     
     <item>
-      <title>Quantum random walks</title>
+      <title>Quantum Random Walks</title>
       <link>https://houssemkihal.github.io/quantum-random-walks/</link>
       <pubDate>Sat, 27 Apr 2019 00:56:01 +0200</pubDate>
       

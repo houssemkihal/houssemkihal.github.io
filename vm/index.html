@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>360 Pro | Alexis Collado</title>
+<title>Vicsek model</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#574CDD">
 <meta name="description" content="">
@@ -56,15 +56,15 @@
     <a href="https://houssemkihal.github.io/">
         <img class="logo" src="https://houssemkihal.github.io/img/logo.png" alt="My Portfolio">
     </a>
-    <h5>360 Pro Case Study</h5>
+    <h5>Vicsek model</h5>
     <div class="sub-navigation">
         <a href="https://houssemkihal.github.io/" class="main-navigation-link" data-scroll-goto="2">Case Studies</a>
     </div>
 </nav>
         <section>
     <div class="main-case-study">
-        <h1 class="title" style="text-align: center;">360 Pro Performance Tracking System</h1>
-        <h2 class="subtitle" style="text-align: center;">Web App Design</h2>
+        <h1 class="title" style="text-align: center;">Vicsek model</h1>
+        <h2 class="subtitle" style="text-align: center;"></h2>
         <img src="img/featured-360.jpg" alt="">
         <p class="summary"></p>
         
@@ -79,49 +79,51 @@
 
         <section>
             <div class="content-case-study">
-                <h1 id="the-challenge">The Challenge</h1>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/CMtN_LUpeLg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<p>Meeting with Chappy Callanta of 360 Pro led us to discover the root problem — the implementation of their performance testing framework. The gym uses a Numbers document on one iPad to record all tests, and relies on inefficient manual procedures to do the work. The document</p>
-<p>$$
-\partial_{t} r=-\frac{1}{\zeta} \partial_{\tilde{r}} \mathcal{V}(r)+\sqrt{2 D_{t}} \xi(t)
-$$</p>
-<p><img src="//localhost:1313/360pro/img/dfd.png" alt=""></p>
-<p>Group testing is impossible to do. Chappy says &ldquo;I need to duplicate the Numbers document again and again for each testing session. It&rsquo;s not ideal for groups of people who want to get tested.&rdquo; In the end, the performance framework does not work because a unique tech solution to their problem does not exist.</p>
-<p>The mean square displacement (MSD) :
+                <h1 id="introduction-">Introduction :</h1>
+<p>One of the milestones in the modeling of active matter and the most studied model in this field is the Vicsek model introduced by Tamás Vicsek and al in 1995 <a href="https://arxiv.org/abs/cond-mat/0611743">1</a> .
+The model revealed new types of dynamics such as alignment and swarming.
+Since it is often useful to work with continuous-time equations of motion from a physics standpoint, in this section, we going to introduce a continuous version of the Vicsek model, as opposed to the original Vicsek model, which describes a two-dimensional system. The continuous model will be used within the framework introduced in the preceding section where updating rules follow the Langevin dynamics that describe the motion using stochastic differential equations.
+Such a framework allows for the introduction of physical quantities such as temperature into the Vicsek model.</p>
+<p>The equations of motion in continuous time read :
 $$
-\left\langle\Delta \boldsymbol{r}(t)^{2}\right\rangle=\int_{0}^{t} d t^{\prime} d t^{\prime \prime}\left\langle\boldsymbol{\xi}\left(t^{\prime}\right) \cdot \boldsymbol{\xi}\left(t^{\prime \prime}\right)\right\rangle= 2 D_t t
+\partial_{t} r_{\alpha, i}(t)= v_{0} e_{\alpha}(t)
 $$</p>
-<h1 id="contextual-inquiry">Contextual Inquiry</h1>
-<p>To begin our systems analysis, we conducted site visits to 360 Pro. What we did was to get to know their process as much as possible and map out the actual data flows that happen. After interviewing their member coordinator and coaches, we discovered all the documents they use for a workout program for any athlete to begin. A more important issue was that Chappy was the only one using the performance framework, because they simply &ldquo;didn&rsquo;t get it&rdquo; using the iPad Numbers document. It was a relatively new system and there was no way they would be able to grasp it right away.
-$\int_a^b f(x)$
-At this point, we knew that the solution was making the performance system more accessible to all coaches at the gym, and create a system that is possibly scalable across future branches of the gym.</p>
-<h1 id="feature-prioritization">Feature Prioritization</h1>
-<p>I&rsquo;ve done research on how personas and user stories might carry too many assumptions and have loopholes. I came across <a href="https://blog.intercom.com/using-job-stories-design-features-ui-ux/">job stories</a>
-some time before and I wanted my team to implement it. According to Paul Adams of Intercom, &ldquo;Job Stories are a different way of thinking about defining features, UI, and UX.&rdquo; And so, being adventurous and a bit skeptical, we came up with our own. I think it helped us figure out the features we needed even more.</p>
-<p><img src="//localhost:1313/360pro/img/jobstories.jpg" alt=""></p>
-<p>This was very early on in the process and it helped my team empathize with our primary users. This wasn&rsquo;t really required by our instructor, we just went ahead and did it. The result was great for us, because we decided as a team on the design components we wanted to roll out: the performance testing core functionality, a leaderboard, a digital version of the gym&rsquo;s Workout of the Week whiteboard, and general athlete user management.</p>
-<h1 id="field-immersion">Field Immersion</h1>
-<p><img src="//localhost:1313/360pro/img/field.jpg" alt=""></p>
-<p>I learned about field immersion during my visit to UX Singapore 2016. I wanted to try out the idea for our project so I invited my teammates to actually try a gym session out, just to go to an extra level of empathy. Jacob Chua and I underwent the trial program, and we tried out best to empathize with the coach who was teaching us what to do. At that point, I was thinking of the possible ways I could make the system of testing easier, considering the situation we faced. I tried to create a mental model for the coach embedded into my subconscious.</p>
-<h1 id="systems-analysis">Systems Analysis</h1>
-<p>We created a lot of data flow diagrams for the project, considering each process very carefully. We asked ourselves, how could we would create a usable and delightful product for the end-users, considering all these data flows? How would it actually translate to the product design? Considering the feature sets we decided on, what will be the best way to design them?</p>
-<p>We also created logic models, use case diagrams and other documentation. This was all bulk of the coursework we were required to do, and I was more than excited to create the screens after all the prep work we were doing. During this process however, I felt that we could have done more user research really geared towards understanding the user more, like a usability test using low-fi prototypes.</p>
-<h1 id="design-decisions">Design Decisions</h1>
-<p><img src="//localhost:1313/360pro/img/testing.png" alt=""></p>
-<p><strong>Making Testing Easier</strong>
-<!-- raw HTML omitted -->Since testing was the main problem, we concentrated on designing that experience first. Using exercise cards that automatically compute pro score based on raw data while also considering gender norms, we focus the experience on actually just filling out information easily for the primary user. We wanted to eliminate cognitive load as much as possible.</p>
-<p><strong>Testing Summaries</strong>
-<!-- raw HTML omitted -->The summaries should indicate whether an athlete has improved his pro score. We used a variety of visual design communication techniques to convey this.</p>
-<p><img src="//localhost:1313/360pro/img/starttest.png" alt=""></p>
-<p><strong>Tracking Performance</strong>
-<!-- raw HTML omitted -->Leaderboards and member dashboards will fulfill this aspect of the product. Search definitely plays a major role in the user experience of the app, and almost always populates all design components.</p>
-<h1 id="next-steps">Next Steps</h1>
-<p>I will have to create a FramerJS prototype to simulate microinteractions. Though that might not be useful anymore since we can go straight to development. Another challenge is using the right front-end and back-end frameworks to build the platform.</p>
-<p>The gym uses an iPad for testing so further refining the responsiveness of the designs, and also optimizing for tablets would be a good idea. We will probably conduct more usability research for the project and iterate on whatever current mockups we have.</p>
+<p>$$
+\partial_{t} e_{\alpha}= \left\langle e_{\alpha j}(t)\right\rangle_{R}+P_{\alpha, i} \circ \eta_{\beta , i}
+$$</p>
+<p>where the positions of each particle are described by $\mathbf{r}_i(t)$ and velocities $\mathbf{v}_i(t)$ and
+Nois</p>
+<p>$P_{\alpha,i}$</p>
+<p>All particles have the same speed $v_0$. Hence, the velocities can be represented only by the director $\mathbf{e}(t)$.  $\boldsymbol\eta(t)$ is a stochastic torque Gaussian white noise, with its magnitude depending on the diffusion coefficient $D_r$ and with uncorrelated components</p>
+<p>$$
+\langle\boldsymbol\eta(t)\rangle=0, \quad\left\langle\eta_{\alpha i}(t) \eta_{\beta j}\left(t^{\prime}\right)\right\rangle=\delta_{i,j}\delta\left(t-t^{\prime}\right)D_{t}, \quad \alpha, \beta=x, y, z
+$$</p>
+<p>furthermore $\left\langle &hellip;\right\rangle_{R}$ denotes the average over the nearby particles as :</p>
+<p>$$
+\left\langle e_{\alpha j}(t)\right\rangle_{R} = \sum_{j} T_{i j}(\{\boldsymbol{x}_{i}, \boldsymbol{e}_{i}\},\{ \boldsymbol{e}_{j}\})
+$$</p>
+<p>It should be noted that these interaction rules only consider the orientation of nearby particles. Thus, we only need the $j-th$ particle&rsquo;s orientation $\{ \boldsymbol{e}_{j}\}$. This is why this model is known as a velocity alignment mechanism.</p>
+<p>\(
+T_{i j}= \begin{cases}e_{j} &amp; \text { if } r_{i j}&lt;R \ 0 &amp; \text { else }\end{cases}
+\)</p>
+<p>where $r_{i j}$ are particles lying within the interaction sphere of radius $R$ and  center particle $i$.</p>
+<p>In each time step, the position and the orientation of the particles are updated following the rules of classical mechanics, where particles seek to align their current orientation $\mathbf{e}(t)$ to the average direction of all particles with position vectors within a radius $R$. To add an element of stochasticity, These particle alignments are considered to be subject to noise, which is captured in the form of random errors in average orientation measurement (see Fig below for a sample trajectory).</p>
+<p><img src="https://houssemkihal.github.io/vm/img/VM_fig.png" alt=""></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>After describing the model, it is useful now to introduce a quantitative characterization. An important feature is the presence of phase transitions, which are expected in Active matter even though the system is out of equilibrium.
+Phase transitions happen when the order parameter suddenly changes under a variation control parameter. The classic example of phase transition is the spontaneous magnetization of a ferromagnetic, which occurs when the temperature is past the critical point.
+In this case, the order parameter is the magnetization where the control parameter is the temperature. This raised the questions: what kind of phases are observed in active matter ? And what are the order parameters involved ?</p>
+<h2 id="polar-order">Polar order</h2>
+<p>Many active systems exhibit swarming, which occurs when a sum of the particles move with the same velocity orientation. Such a state can be obtained when particles tend to correlate their velocities, aligning their orientations. An order parameter indicating the presence of swarming is given by</p>
+<p>$$
+\mathbf{V}=\frac{1}{N}\left|\sum_{i=1}^{N} \frac{\mathbf{v}_{i}}{\left|\mathbf{v}_{i}\right|}\right|
+$$</p>
+<p>Where $N$ is the number of the active particles, $\mathbf{v}_i/\left|\mathbf{v}_i\right|$ is the normalized velocity of the $i-th$ particle. In the case of this model, $v_0$ is their mean speed. The polar order parameter (or swarming) V ranges from 0 to 1 for a disorganized motion where velocity orientations are distributed uniformly (i.e. molecular gas)</p>
+<p>Full swarming is attained for $V = 1$ where active particles move in the same direction with no fluctuations. Here, the particles’ velocities spontaneously align in a particular direction, breaking the system&rsquo;s continuous rotational symmetry. Analogous to what happens in the Heisenberg ferromagnetism model, the transition from disorder to swarming here is driven by the competition between the alignment mechanism and stochastic noise.</p>
+<p>Varying the parameter $\eta$ several phases can be observed. The authors argued for a non-equilibrium transition when the noise is reduced below a critical value, see Fig</p>
+<p>As a final remark, despite its apparent simplicity, the Vicsek model has played a crucial role in understanding active matter because it includes the fundamental elements of numerous biological and artificial systems that exhibit the universal flocking transition.</p>
 
             </div>
         </section>

@@ -18,6 +18,15 @@ Group testing is impossible to do. Chappy says &amp;ldquo;I need to duplicate th
     </item>
     
     <item>
+      <title>Vicsek model</title>
+      <link>https://houssemkihal.github.io/vm/</link>
+      <pubDate>Sun, 15 Oct 2017 03:29:08 -0700</pubDate>
+      
+      <guid>https://houssemkihal.github.io/vm/</guid>
+      <description>Introduction : One of the milestones in the modeling of active matter and the most studied model in this field is the Vicsek model introduced by Tamás Vicsek and al in 1995 1 . The model revealed new types of dynamics such as alignment and swarming. Since it is often useful to work with continuous-time equations of motion from a physics standpoint, in this section, we going to introduce a continuous version of the Vicsek model, as opposed to the original Vicsek model, which describes a two-dimensional system.</description>
+    </item>
+    
+    <item>
       <title>Biological Oscillators</title>
       <link>https://houssemkihal.github.io/biological_oscillators/</link>
       <pubDate>Mon, 27 Apr 2020 00:56:01 +0200</pubDate>
@@ -28,10 +37,10 @@ Group testing is impossible to do. Chappy says &amp;ldquo;I need to duplicate th
     
     <item>
       <title>Quantum Random Walks</title>
-      <link>https://houssemkihal.github.io/quantum-random-walks/</link>
+      <link>https://houssemkihal.github.io/qrw/</link>
       <pubDate>Sat, 27 Apr 2019 00:56:01 +0200</pubDate>
       
-      <guid>https://houssemkihal.github.io/quantum-random-walks/</guid>
+      <guid>https://houssemkihal.github.io/qrw/</guid>
       <description></description>
     </item>
     

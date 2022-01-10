@@ -99,9 +99,9 @@ $$</p>
 <p>where $\mathbf{x}_i$ denotes the position of the particle, and $\theta_i$ represents its moving direction,$\mathbf{V}(.) \equiv(\cos (.), \sin (.))^T$, and $v_0$ is the particle speed, ${\gamma}$ the strength of the interaction $\eta_i(t)$  noise term.</p>
 <!-- raw HTML omitted -->
 <p>where $\beta$ is the size of the cone and $\eta(t)$ is the noise term with amplitude given by $D_r$</p>
-<p>\begin{equation}
-\langle\boldsymbol\eta(t)\rangle=0, \quad\left\langle\eta_{\alpha i}(t) \eta_{\beta j}\left(t^{\prime}\right)\right\rangle=\delta_{i,j}\delta\left(t-t^{\prime}\right)D_{t}, \quad \alpha, \beta=x, y
-\end{equation}</p>
+<p>$$
+\langle\boldsymbol\eta(t)\rangle=0, \quad\left\langle\eta_{\alpha i}(t) \eta_{\beta j}\left(t^{\prime}\right)\right\rangle=\delta_{i,j}\delta\left(t-t^{\prime}\right)D_{r}, \quad \alpha, \beta=x, y
+$$</p>
 <p>In each time step, the position and the orientation of the particles are updated following the rules of classical mechanics. In this model, particles seek to align their current orientation to the average position of particles within the cone of interaction. To add an element of stochasticity, these particle alignments are considered to be subject to noise, which is captured in the form of random errors in average orientation measurement. see Figure below for sample trajectory.</p>
 <p><img src="https://houssemkihal.github.io/pf_2d/img/fig2.jpg" alt=""></p>
 <blockquote>
@@ -124,13 +124,28 @@ The free parameters of the model that determine its state behavior are the speed
 <p>First, we tuned the system parameter for only polar behavior of the system by decreasing the cone size and looked at the effect of the system&rsquo;s noise parameter.
 We ran a simulation with 3000 particles in a $L^2 = 30^2$ box, an interaction radius $R = 1$ , speed  $v_0 = 1$, and  $\gamma = 5$. To study the polar phase, we need to fixed the noise at a low value and varied the cone size from $\beta = [0.6,1.2]$. The particles showed an ordered motion and a polar structure emerged. see fig below</p>
 <p>This is one of the most interesting results. In Fig  below, it can be clearly seen that the system is in a state of order. where particles created groups of polar structures. Those groups had the same orientation and formed a warms like patterns. This movement of particles was due to the low noise at $\eta = [0.001,0.3]$ and cone size $\beta = [0.6,1.2]$.</p>
-<p><img src="https://houssemkihal.github.io/pf_2d/img/polar_fig.png" alt=""></p>
+<p><img src="https://houssemkihal.github.io/pf_2d/img/polar_fig_1.png" alt=""></p>
+<blockquote>
+<p>Snapshots of different states of the model, that cover a part of phase space where polar order is observed. The system contains 3000 particles and periodic boundary conditions are applied.</p>
+</blockquote>
 <p>The natural parameter that we can use to measure this phase is the polar order. It&rsquo;s defined as
 $$
 \mathbf{V}=\frac{1}{N}\left|\sum_{i=1}^{N} \frac{\mathbf{v}_{i}}{\left|\mathbf{v}_{i}\right|}\right|
 $$</p>
 <p>We tuned the noise $\eta$ and cone size $\beta$ then evaluated the direction of motion of the particles after a certain time $t = 10000$ and calculated the polar order parameter</p>
 <p><img src="https://houssemkihal.github.io/pf_2d/img/polar.png" alt=""></p>
+<h2 id="nematic-order-parameter">Nematic Order Parameter</h2>
+<p>In this part we kept the same parameters and increased the noise. Neumatic structures start to emerge</p>
+<p><img src="https://houssemkihal.github.io/pf_2d/img/nematic_fig_1.png" alt=""></p>
+<blockquote>
+<p>Snapshots of different states of the model, that cover a part of phase space where nematic order is observed.</p>
+</blockquote>
+<p>Since particles are moving in opposite directions, the polar order parameter vanishes. To identify this ordered state, a new order parameter must be utilized.</p>
+<p>The scalar order parameter corresponds to the maximum eigenvalue gives a maximum Nematic order, and vanish for a disorganized motion.</p>
+<p><img src="https://houssemkihal.github.io/pf_2d/img/nematic.png" alt=""></p>
+<h2 id="aggregate-phase">Aggregate phase</h2>
+<p>the final observation, the phase that we called aggregate in the phase diagram. This phase generates a zoo of self-organized patterns, that can not be classified with previous order parameters here we going to show some of those structures.</p>
+<p><img src="https://houssemkihal.github.io/pf_2d/img/agr.jpg" alt=""></p>
 
             </div>
         </section>

@@ -108,7 +108,7 @@ $$</p>
 <p>The interaction rule of this model, the sample trajectory of particles is represented by (red dashed line). darker colors indicate more recent events. At each time step, the particle aligns its current orientation (blue arrows) to the average orientation of all particles located within the circular area in radius R, yielding the new orientation (red arrow)</p>
 </blockquote>
 <h1 id="simulation-results">Simulation Results</h1>
-<p>With our simulation, we investigated the behavior and the reaction of the system to changes in the control parameter. we used different Order parameters to classify the system and to analyze the different phases. We were especially interested in identifying the nematic, polar, and aggregate behavior of this active particle model. The Euler-Maruyama technique was used to solve stochastic differential equations with an integration time step of $dt = 0.05$.
+<p>With our simulation, we investigated the behavior and the reaction of the system to changes in the control parameter. we used different Order parameters to classify the system and to analyze the different phases. We were especially interested in identifying the nematic, polar, and aggregate behavior of this active particle model. The Euler-Maruyama technique was used to solve stochastic differential equations with an integration time step of $dt = 0.1$.
 The free parameters of the model that determine its state behavior are the speed of self-propulsion $v_0$, the radius of interaction, cone size $\beta$ ,and the magnitude of the noise $\eta$.</p>
 <p>A series of characteristic snapshots that summarize the phase behavior of the system can be found in Figure below :
 <img src="https://houssemkihal.github.io/pf_2d/img/fig3.png" alt=""></p>
@@ -120,8 +120,17 @@ The free parameters of the model that determine its state behavior are the speed
 <li>For high noise levels, a homogeneous and disordered state emerge (gas phase).</li>
 </ul>
 </blockquote>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h2 id="polar-order-parameter">Polar order parameter:</h2>
+<p>First, we tuned the system parameter for only polar behavior of the system by decreasing the cone size and looked at the effect of the system&rsquo;s noise parameter.
+We ran a simulation with 3000 particles in a $L^2 = 30^2$ box, an interaction radius $R = 1$ , speed  $v_0 = 1$, and  $\gamma = 5$. To study the polar phase, we need to fixed the noise at a low value and varied the cone size from 0.5 to 1.8. The particles showed an ordered motion and a polar structure emerged. see fig below</p>
+<p>This is one of the most interesting results. In Fig  below, it can be clearly seen that the system is in a state of order. where particles created groups of polar structures. Those groups had the same orientation and formed a warms like patterns. This movement of particles was due to the low noise at $\eta = [0.001,0.3]$ and cone size $\beta = [0.6,1.2]$.</p>
+<p><img src="https://houssemkihal.github.io/pf_2d/img/polar.png" alt=""></p>
+<p>The natural parameter that we can use to measure this phase is the polar order. It&rsquo;s defined as
+$$
+\mathbf{V}=\frac{1}{N}\left|\sum_{i=1}^{N} \frac{\mathbf{v}_{i}}{\left|\mathbf{v}_{i}\right|}\right|
+$$</p>
+<p>We tuned the noise $\eta$ and cone size $\beta$ then evaluated the direction of motion of the particles after a certain time $t = 10000$ and calculated the polar order parameter</p>
+<p><img src="https://houssemkihal.github.io/pf_2d/img/polar_fig.png" alt=""></p>
 
             </div>
         </section>

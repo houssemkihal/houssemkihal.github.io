@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Houssem&#39;s Portfolio</title>
-    <link>https://houssemkihal.github.io/</link>
+    <link>https://houssemkihal.com/</link>
     <description>Recent content on Houssem&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://houssemkihal.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://houssemkihal.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Position Alignment</title>
-      <link>https://houssemkihal.github.io/pf_2d/</link>
+      <link>https://houssemkihal.com/pf_2d/</link>
       <pubDate>Sun, 15 Oct 2017 03:29:08 -0700</pubDate>
       
-      <guid>https://houssemkihal.github.io/pf_2d/</guid>
+      <guid>https://houssemkihal.com/pf_2d/</guid>
       <description>Introduction : Collective motion patterns observed in birds, fish, sheep, or a colony of bacteria are prominent examples of complex, self-organized, collective motion. Those biological systems are very complex, making theoretical descriptions extremely challenging. The most typical approach to understanding these systems is to use a velocity alignment mechanism that mediates the interactions among the moving individuals such as the archetypal Vicsek model. A few recent pioneering works have questioned the widely held belief that behind each collective motion pattern of self-propelled entities there is a velocity alignment mechanism at work.</description>
     </item>
     
     <item>
       <title>Vicsek model</title>
-      <link>https://houssemkihal.github.io/vm/</link>
+      <link>https://houssemkihal.com/vm/</link>
       <pubDate>Sun, 15 Oct 2017 03:29:08 -0700</pubDate>
       
-      <guid>https://houssemkihal.github.io/vm/</guid>
+      <guid>https://houssemkihal.com/vm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Biological Oscillators</title>
-      <link>https://houssemkihal.github.io/biological_oscillators/</link>
+      <link>https://houssemkihal.com/biological_oscillators/</link>
       <pubDate>Mon, 27 Apr 2020 00:56:01 +0200</pubDate>
       
-      <guid>https://houssemkihal.github.io/biological_oscillators/</guid>
+      <guid>https://houssemkihal.com/biological_oscillators/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantum Random Walks</title>
-      <link>https://houssemkihal.github.io/qrw/</link>
+      <link>https://houssemkihal.com/qrw/</link>
       <pubDate>Sat, 27 Apr 2019 00:56:01 +0200</pubDate>
       
-      <guid>https://houssemkihal.github.io/qrw/</guid>
+      <guid>https://houssemkihal.com/qrw/</guid>
       <description></description>
     </item>
     

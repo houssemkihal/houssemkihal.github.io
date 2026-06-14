@@ -83,7 +83,7 @@
 <p>Collective motion patterns observed in birds, fish, sheep, or a colony of bacteria are prominent examples of complex, self-organized, collective motion. Those biological systems are very complex, making theoretical descriptions extremely challenging. The most typical approach to understanding these systems is to use a velocity alignment mechanism that mediates the interactions among the moving individuals such as the archetypal Vicsek model. A few recent pioneering works have questioned the widely held belief that behind each collective motion pattern of self-propelled entities there is a velocity alignment mechanism at work.</p>
 <p>in the following, we are going to investigate a active matter model <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.117.248001">1</a> where there is no such velocity alignment. which assumes that particles interact using solely the available instantaneous visual information. Particles have asymmetrical short-ranged interactions, specifically position-based attraction. As opposed to the Vicsek model, this model does not perform velocity alignment.</p>
 <p>Furthermore, this model includes cognitive concepts such as the field of view where particles have a limited field of view defined by the vision cone see Figure below  (a). The limited field of view restricts the visual perception of neighbors. For instance, particle A could see particle B without particle B seeing A. see Fig (b).</p>
-<p><img src="https://houssemkihal.github.io/pf_2d/img/fig1.jpg" alt=""></p>
+<p><img src="https://houssemkihal.com/pf_2d/img/fig1.jpg" alt=""></p>
 <blockquote>
 <p>Schematic illustration of the vision cone with angle $\beta$ (b) Example of the asymmetry of interactions in the model.</p>
 </blockquote>
@@ -103,7 +103,7 @@ $$</p>
 \langle\boldsymbol\eta(t)\rangle=0, \quad\left\langle\eta_{\alpha i}(t) \eta_{\beta j}\left(t^{\prime}\right)\right\rangle=\delta_{i,j}\delta\left(t-t^{\prime}\right)D_{r}, \quad \alpha, \beta=x, y
 $$</p>
 <p>In each time step, the position and the orientation of the particles are updated following the rules of classical mechanics. In this model, particles seek to align their current orientation to the average position of particles within the cone of interaction. To add an element of stochasticity, these particle alignments are considered to be subject to noise, which is captured in the form of random errors in average orientation measurement. see Figure below for sample trajectory.</p>
-<p><img src="https://houssemkihal.github.io/pf_2d/img/fig2.jpg" alt=""></p>
+<p><img src="https://houssemkihal.com/pf_2d/img/fig2.jpg" alt=""></p>
 <blockquote>
 <p>The interaction rule of this model, the sample trajectory of particles is represented by (red dashed line). darker colors indicate more recent events. At each time step, the particle aligns its current orientation (blue arrows) to the average orientation of all particles located within the circular area in radius R, yielding the new orientation (red arrow)</p>
 </blockquote>
@@ -111,7 +111,7 @@ $$</p>
 <p>With our simulation, we investigated the behavior and the reaction of the system to changes in the control parameter. we used different Order parameters to classify the system and to analyze the different phases. We were especially interested in identifying the nematic, polar, and aggregate behavior of this active particle model. The Euler-Maruyama technique was used to solve stochastic differential equations with an integration time step of $dt = 0.1$.
 The free parameters of the model that determine its state behavior are the speed of self-propulsion $v_0$, the radius of interaction, cone size $\beta$ ,and the magnitude of the noise $\eta$.</p>
 <p>A series of characteristic snapshots that summarize the phase behavior of the system can be found in Figure below :
-<img src="https://houssemkihal.github.io/pf_2d/img/fig3.png" alt=""></p>
+<img src="https://houssemkihal.com/pf_2d/img/fig3.png" alt=""></p>
 <blockquote>
 <ul>
 <li>For low noise levels and limited cone size, particles tend to align their direction in a polar order.</li>
@@ -124,7 +124,7 @@ The free parameters of the model that determine its state behavior are the speed
 <p>First, we tuned the system parameter for only polar behavior of the system by decreasing the cone size and looked at the effect of the system&rsquo;s noise parameter.
 We ran a simulation with 3000 particles in a $L^2 = 30^2$ box, an interaction radius $R = 1$ , speed  $v_0 = 1$, and  $\gamma = 5$. To study the polar phase, we need to fixed the noise at a low value and varied the cone size from $\beta = [0.6,1.2]$. The particles showed an ordered motion and a polar structure emerged. see fig below</p>
 <p>This is one of the most interesting results. In Fig  below, it can be clearly seen that the system is in a state of order. where particles created groups of polar structures. Those groups had the same orientation and formed a warms like patterns. This movement of particles was due to the low noise at $\eta = [0.001,0.3]$ and cone size $\beta = [0.6,1.2]$.</p>
-<p><img src="https://houssemkihal.github.io/pf_2d/img/polar_fig_1.png" alt=""></p>
+<p><img src="https://houssemkihal.com/pf_2d/img/polar_fig_1.png" alt=""></p>
 <blockquote>
 <p>Snapshots of different states of the model, that cover a part of phase space where polar order is observed. The system contains 3000 particles and periodic boundary conditions are applied.</p>
 </blockquote>
@@ -133,10 +133,10 @@ $$
 \mathbf{V}=\frac{1}{N}\left|\sum_{i=1}^{N} \frac{\mathbf{v}_{i}}{\left|\mathbf{v}_{i}\right|}\right|
 $$</p>
 <p>We tuned the noise $\eta$ and cone size $\beta$ then evaluated the direction of motion of the particles after a certain time $t = 10000$ and calculated the polar order parameter</p>
-<p><img src="https://houssemkihal.github.io/pf_2d/img/polar.png" alt=""></p>
+<p><img src="https://houssemkihal.com/pf_2d/img/polar.png" alt=""></p>
 <h2 id="nematic-order-parameter">Nematic Order Parameter</h2>
 <p>In this part we kept the same parameters and increased the noise. Neumatic structures start to emerge</p>
-<p><img src="https://houssemkihal.github.io/pf_2d/img/nematic_fig_1.png" alt=""></p>
+<p><img src="https://houssemkihal.com/pf_2d/img/nematic_fig_1.png" alt=""></p>
 <blockquote>
 <p>Snapshots of different states of the model, that cover a part of phase space where nematic order is observed.</p>
 </blockquote>
@@ -146,13 +146,13 @@ $$</p>
 Q_{\alpha \beta}=&lt;\left(2 V_{\alpha} V_{\beta}-\delta_{\alpha \beta}\right)&gt;
 $$</p>
 <p>The scalar order parameter corresponds to the maximum eigenvalue gives a maximum Nematic order, and vanish for a disorganized motion.</p>
-<p><img src="https://houssemkihal.github.io/pf_2d/img/nematic.png" alt=""></p>
+<p><img src="https://houssemkihal.com/pf_2d/img/nematic.png" alt=""></p>
 <p>Looking at the nematic diagram as shown in
 Fig above, we can identify the characteristics of the system; the particles of the system form nematic bands.
 As expected, we can see a pure nematic order is around $\beta=1.6$ and noise $D_r=1$ .</p>
 <h2 id="aggregate-phase">Aggregate phase</h2>
 <p>The final observation, the phase that we called aggregate in the phase diagram. This phase generates a zoo of self-organized patterns, that can not be classified with previous order parameters here we going to show some of those structures.</p>
-<p><img src="https://houssemkihal.github.io/pf_2d/img/agr.jpg" alt=""></p>
+<p><img src="https://houssemkihal.com/pf_2d/img/agr.jpg" alt=""></p>
 <p>to classify those patterns and study the behavior of this region of the phase diagram w</p>
 
             </div>
